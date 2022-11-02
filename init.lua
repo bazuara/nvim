@@ -1,0 +1,6 @@
+require("bazuara.plugins-setup")
+require("bazuara.core.options")
+require("bazuara.core.keymaps")
+require("bazuara.core.colorscheme")
+require("bazuara.plugins.comment")
+require("bazuara.plugins.nvim-tree")
