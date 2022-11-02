@@ -17,6 +17,7 @@
 "" VISUAL SETTINGS {{{
 syntax on
 set relativenumber
+set invnumber
 set nowrap
 set cursorline
 "" }}}
@@ -31,7 +32,6 @@ set clipboard=unnamedplus
 "" }}}
 
 "" KEYBOARD SHORTCUTS {{{
-:nmap <C-N><C-N> :set invnumber<CR>
 :set listchars=tab:▒░,trail:▓
 :nmap <C-M><C-M> :set invlist<CR>
 "" }}}
