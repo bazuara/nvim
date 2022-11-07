@@ -49,9 +49,32 @@ return packer.startup(function(use)
 	-- file tree
 	use("nvim-tree/nvim-tree.lua")
 
+	-- line bar
+	use("nvim-lualine/lualine.nvim")
+
 	-- icons
 	use("kyazdani42/nvim-web-devicons")
 	if packer_bootstrap then
 		require("packer").sync()
 	end
+
+	-- autocompletion
+	use("hrsh7th/nvim-cmp")
+	use("hrsh7th/cmp-buffer")
+	use("hrsh7th/cmp-path")
+
+	-- snippets
+	use("L3MON4D3/LuaSnip") -- snippet engine
+	use("saadparwaiz1/cmp_luasnip") -- for autocompletion
+	use("rafamadriz/friendly-snippets") -- useful snippets
+
+	-- maging and installing lsp servers
+	use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
+	use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
+
+	-- configuring lsp servers
+	use("neovim/nvim-lspconfig") -- easily configure language servers
+	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
+	use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
+	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 end)

@@ -20,6 +20,7 @@ set relativenumber
 set invnumber
 set nowrap
 set cursorline
+set scrolloff=15
 "" }}}
 
 "" COLLAPSIBLE CODE {{{
