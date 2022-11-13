@@ -48,6 +48,7 @@ lspconfig["cssls"].setup({
 })
 
 -- configure emmet language server
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 lspconfig["emmet_ls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
