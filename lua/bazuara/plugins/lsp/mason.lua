@@ -10,6 +10,12 @@ if not mason_lspconfig_status then
   return
 end
 
+-- import mason-null-ls plugin safely
+local mason_null_ls_status, mason_null_ls = pcall(require, "mason-null-ls")
+if not mason_null_ls_status then
+  return
+end
+
 mason.setup()
 
 mason_lspconfig.setup({
@@ -18,4 +24,12 @@ mason_lspconfig.setup({
 		"emmet_ls",
 		"cssls"
 	}
+})
+
+mason_null_ls.setup({
+	-- list of formatters & linters for mason to install
+	ensure_installed = {
+		"prettier", -- ts/js formatter
+	},
+	automatic_installation = true,
 })
