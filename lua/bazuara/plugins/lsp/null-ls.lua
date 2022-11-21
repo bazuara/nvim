@@ -17,6 +17,7 @@ null_ls.setup({
 		--  to disable file types use
 		--  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
 		formatting.prettier, -- js/ts formatter
+		null_ls.builtins.diagnostics.rubocop, -- rubocop for ruby
 	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)
