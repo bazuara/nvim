@@ -37,6 +37,10 @@ set clipboard=unnamedplus
 :nmap <C-M><C-M> :set invlist<CR>
 "" }}}
 
+"" SPELL CHECK {{{
+:setlocal spelllang=es
+"" }}}
+
 "" INDENTATION {{{
 set cindent
 set tabstop=4
