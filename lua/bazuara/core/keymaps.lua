@@ -12,6 +12,9 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
+-- Insert 42header
+keymap.set("n", "<leader>42", ":FortyTwoHeader<CR>")
+
 -- toggle spell check
 keymap.set("n", "<leader>sp", ":set spell!<CR>")
 

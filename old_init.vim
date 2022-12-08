@@ -24,7 +24,7 @@ set scrolloff=15
 "" }}}
 
 "" COLLAPSIBLE CODE {{{
-set foldmethod=syntax
+" set foldmethod=syntax
 set foldnestmax=1
 "" }}}
 
