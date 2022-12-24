@@ -47,6 +47,12 @@ lspconfig["cssls"].setup({
   on_attach = on_attach,
 })
 
+-- configure clang server
+lspconfig["clangd"].setup({
+    capabilities = capabilities,
+    on_attach = on_attach,
+})
+
 -- configure emmet language server
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 lspconfig["emmet_ls"].setup({
